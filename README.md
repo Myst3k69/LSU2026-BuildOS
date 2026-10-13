@@ -56,3 +56,11 @@ Le build vérifie la syntaxe JavaScript et l’absence d’URL externe ou d’ap
 - Retrouver les ressources pratiques et exporter le projet.
 
 L’interface s’adapte au téléphone et au bureau. Les fenêtres sont accessibles au clavier, se ferment avec Échap et les animations respectent la préférence de réduction des mouvements.
+
+## Déploiement Vercel
+
+Le fichier `vercel.json` configure un hébergement statique : preset **Other**, build `npm run build`, sortie `dist`. Aucune installation de dépendance applicative n’est nécessaire. Le serveur Node de développement n’est pas déployé.
+
+Pour un nouveau projet Vercel, importez `Myst3k69/LSU2026-BuildOS` et sélectionnez la branche `develop` pour le premier déploiement. Si `develop` doit fournir le site de production, définissez-la comme branche de production dans les paramètres Git du projet Vercel.
+
+L’application déployée reste un prototype avec IA simulée et stockage local. Les données sont propres au navigateur et à l’adresse du site : une nouvelle URL de déploiement ne récupère pas les données enregistrées sur une autre adresse.
